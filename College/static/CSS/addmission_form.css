@@ -1,0 +1,145 @@
+.container {
+    width: 50%;
+    margin: 10px auto;
+    padding: 0 0 20px 0;
+    border: 2px solid rgba(0, 0, 0, 0.768);
+    overflow: auto;
+    background-color: rgba(207, 196, 196, 0.203);
+}
+
+.container .header {
+    height: 150px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(36, 36, 229, 0.807);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header .logo {
+    max-width: 100px;
+    max-height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 50%;
+
+}
+
+.container .header .logo img {
+    height: 100px;
+
+
+}
+
+.container .header .text h2 {
+    font-size: 22pt;
+    font-weight: 1000;
+    margin: 0;
+    text-align: center;
+}
+
+.container .header .text h3 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.container .header .text p {
+    font-size: 16pt;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+
+.container .header .img {
+    max-width: 100px;
+    max-height: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .header .img img {
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.container .header .text {
+    text-align: center;
+    color: white;
+}
+
+.container .admission-form {
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    height: 100%;
+
+
+}
+
+
+.container .admission-form .mb-3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+    width: fit-content;
+}
+
+.container .admission-form .form-label {
+    font-size: 12pt;
+}
+
+
+.container .admission-form .form-control {
+    font-size: 10pt;
+    border-radius: 5px;
+    padding: 10px;
+    height: 30px;
+    width: 300px;
+    border: 1px solid rgb(130, 130, 130);
+}
+
+.container .admission-form .address {
+
+    height: 100px;
+
+}
+
+
+.container .admission-form .mb-3 input[type="file"] {
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+
+.submit-button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(9, 107, 218);
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12pt;
+}
+
+.submit-button:hover {
+    background: rgba(9, 107, 218, 0.912);
+    color: white;
+    cursor: pointer;
+}

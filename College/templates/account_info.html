@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block title %}Account - SGIC{% endblock %}
+{% block CSS %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='/CSS/account_info.css') }}">
+{%endblock CSS%}
+
+{% block content %}
+<div class="container">
+
+    <div class="first">
+        <div class="first-head">
+            <img src="{{ image_file }}" alt="" class="rounded-circle account-img">
+            <h4>{{ current_user.username }}</h4>
+            <div></i><a href="{{ url_for('logout') }}"><i class='bx bx-log-out'></i> Log Out</a></div>
+        </div>
+        <div class="second-head">
+            <a class="button" href="{{ url_for('account_info') }}"><span class="button1"><i class='bx bxs-dashboard'> </i></span>
+                <span>Dashboard</span></a>
+            <a class="button" href="#"><span  class="button2"><i class='bx bxs-shopping-bag'> </i></span> <span> Order</span></a>
+            <a class="button" href="#"><span  class="button3"><i class='bx bxs-bell-ring'> </i></span> <span>Subscription</span></a>
+            <a class="button" href="#"><span  class="button4"><i class='bx bxs-download'> </i></span><span> Downloads</span></a>
+            <a class="button" href="#"><span  class="button5"><i class='bx bx-shield-alt-2'> </i> </span><span>My Licences</span></a>
+            <a class="button" href="{{ url_for('contact') }}"><span  class="button6"><i class='bx bx-support'> </i>
+                </span><span>Support</span></a>
+        </div>
+
+    </div>
+    <div class="second">
+
+        <div class="top-box">
+            <div class="account">
+                <span>
+                    <i class='bx bxs-user-circle user-image'></i>
+                </span>
+                <span>
+                    <h3>My Account</h3>
+                    <p>Edit your name or change your password</p>
+                </span>
+                <span><a href="{{ url_for('my_account') }}"><i class='bx bxs-chevron-right-circle'></i></a></span>
+            </div>
+            <div class="address">
+                <span>
+                    <i class='bx bxs-heart-circle user-image'></i>
+                </span>
+                <span>
+                    <h3>Address</h3>
+                    <p>Click here to Set up Your Billing Address</p>
+                </span>
+                <span>
+                    <a href="#"><i class='bx bxs-chevron-right-circle'></i></a>
+                </span>
+
+            </div>
+
+        </div>
+        <div class="bottom-box">
+            <h2>My Courses</h2>
+
+            <div class="courses">
+                <div class="course">course1</div>
+                <div class="course">course2</div>
+                <div class="course">course3</div>
+                <div class="course">course4</div>
+                <div class="course">course5</div>
+                <div class="course">course6</div>
+                <div class="course">course7</div>
+                <div class="course">course8</div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+</div>
+{% endblock %}

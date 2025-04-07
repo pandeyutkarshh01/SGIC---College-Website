@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}Addmissions - SGIC{% endblock %}
+
+{% block content %}
+{% for feed in feedback %}
+
+
+    <article class="media content-section border m-2">
+        <div class="media-body">
+            <img src="{{ image_file }}" alt="User's profile pic">
+            <div class="article-metadata">
+                <a href="#" class="mr-2">{{ feed.username }}</a>
+                <small class="text-muted">{{ feed.date_posted }}</small>
+            </div>
+            <div><a href="#" class="article-metadata">{{ feed.email }}</a></div>
+        <p class="article-content">{{ feed.feedback }}</p>    
+        </div>
+    </article>
+{% endfor %}
+{% endblock %}

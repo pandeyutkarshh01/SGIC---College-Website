@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block title %}Contact - SGIC {% endblock title %}
+{% block CSS %} <link rel="stylesheet" href="{{ url_for('static', filename='/CSS/contact.css') }}">   {% endblock CSS %}
+{% block content %}
+    <div class="container">
+        <div class="map">
+            <iframe class="real-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57483.450205425084!2d83.69262034863281!3d25.779954500000013!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3992109b6bf04621%3A0xa156fd2ebe57bebd!2sShri%20Gandhi%20Inter%20College!5e0!3m2!1sen!2sin!4v1738527710392!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="address-container">
+            <div class="address">
+                <p>
+                    <b>Address : </b> Shri Gandhi Inter College
+                    QQH9+XGP, Sherpur Dhotari, Uttar Pradesh 233222
+                </p>
+            </div>
+            <div class="email">
+                <p>
+                    <b>email : </b> sgicghazipur@gmail.com
+                </p>
+            </div>
+            <div class="phone">
+                <p>
+                    <b>Toll Free No. : </b> 9919705905
+                </p>
+            </div>
+            <div class="website">
+                <p>
+                    <b>Website : </b> https://sgicdhotarighazipur.gzp.ind.in/
+                </p>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}Account - SGIC{% endblock %}
+{% block CSS %}
+
+
+{%endblock CSS%}
+
+{% block content %}
+
+<div class="container">
+    <h2>Transfer Certificate Preview</h2>
+    <p><strong>Name:</strong> {{ student.name }}</p>
+    <p><strong>Father's Name:</strong> {{ student.father_name }}</p>
+    <p><strong>Mother's Name:</strong> {{ student.mother_name }}</p>
+    <p><strong>Date of Birth:</strong> {{ student.dob }}</p>
+    <p><strong>Date of Admission:</strong> {{ student.admission_date }}</p>
+    <p><strong>Date of Leaving:</strong> {{ student.leaving_date }}</p>
+    <p><strong>Reason for Leaving:</strong> {{ student.reason_for_leaving }}</p>
+    <div class="buttons">
+
+        <button class="btn btn-success" onclick="printPage()">Print PDF</button>
+        <a href="/" class="btn btn-secondary">Back to Home</a>
+
+        <!-- <button onclick="window.print()">Print</button>
+        <a href="/download/{{ student.admission_no }}" class="btn">Download PDF</a> -->
+    </div>
+</div>
+
+{% endblock %}

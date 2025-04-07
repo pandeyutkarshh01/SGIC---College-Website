@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block title %}Account - SGIC{% endblock %}
+{% block CSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='/CSS/account_info.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='/CSS/my_account.css') }}">
+{%endblock CSS%}
+
+{% block content %}
+<div class="container">
+    <div class="first">
+        <div class="first-head">
+            <img src="{{ image_file }}" alt="">
+            <h3>{{ current_user.username }}</h3>
+            <div></i><a href="{{ url_for('logout') }}"><i class='bx bx-log-out'></i> Log Out</a></div>
+        </div>
+        <div class="second-head">
+            <a class="button" href="{{ url_for('account_info') }}"><span><i class='bx bxs-dashboard'> </i></span>
+                <span>Dashboard</span></a>
+            <a class="button" href="#"><span><i class='bx bxs-shopping-bag'> </i></span> <span> Order</span></a>
+            <a class="button" href="#"><span><i class='bx bxs-bell-ring'> </i></span> <span>Subscription</span></a>
+            <a class="button" href="#"><span><i class='bx bxs-download'> </i></span><span> Downloads</span></a>
+            <a class="button" href="#"><span><i class='bx bx-shield-alt-2'> </i> </span><span>My Licences</span></a>
+            <a class="button" href="{{ url_for('contact') }}"><span><i class='bx bx-support'> </i>
+                </span><span>Support</span></a>
+        </div>
+
+    </div>
+    <div class="second">
+        <div class="head">
+            <p>My Profile</p>
+            <div class="image"><img src="{{ image_file }}" alt="" ></div>
+        </div>
+
+            <div class="content-section">
+                <div class="media">
+                    <p>Edit Profile</p>
+                    <img src="{{ image_file }}" alt="" class="account-img">
+                </div>
+                <form method="POST" action="" enctype="multipart/form-data">
+                    {{ form.hidden_tag() }}
+
+                        <div class="form-group">
+                            {{ form.username.label(class="label" ) }}
+                            {% if form.username.errors %}
+                            {{ form.username(class="input") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.username.errors %}
+                                <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                            {% else %}
+                            {{ form.username(class="input") }}
+                            {% endif %}
+
+                        </div>
+
+                        <div class="form-group">
+                            {{ form.email.label(class="label") }}
+                            {% if form.email.errors %}
+                            {{ form.email(class="input") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                            {% else %}
+                            {{ form.email(class="input") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.picture.label(class=('label')) }}
+                            {{ form.picture(class=('input')) }}
+                            {% if form.picture.errors %}
+                            {% for error in form.picture.errors %}
+                            <span class="text-danger">{{ error }}</span>
+                            {% endfor %}
+                            {% endif %}
+                        </div>
+                    <div class="form-group">
+                        {{ form.submit(class="btn") }}
+                    </div>
+                </form>
+            </div>
+
+
+
+
+    </div>
+
+</div>
+
+
+{% endblock %}

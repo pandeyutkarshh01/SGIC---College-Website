@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}Gallery - SGIC{% endblock %}
+{% block CSS %} <link rel="stylesheet" href="{{ url_for('static', filename='/CSS/gallery.css') }}">   {% endblock CSS %}
+{% block content %}
+    <h1 class="head-gallery">Gallery</h1>
+    <div class="container">
+        <div class="items">
+            <img src="{{ url_for('static', filename='./Images/image1.jpg') }}" alt="">
+        </div>
+        <div class="items">
+            <img src="{{ url_for('static', filename='./Images/image2.jpg') }}" alt="">
+        </div>
+        <div class="items">
+            <img src="{{ url_for('static', filename='./Images/image3.jpg') }}" alt="">
+        </div>
+        <div class="items">
+            <img src="{{ url_for('static', filename='./Images/image4.jpg') }}" alt="">
+        </div>
+        <div class="items">
+            <img src="{{ url_for('static', filename='./Images/image3.jpg') }}" alt="">
+        </div>
+        <div class="items">
+            <img src="{{ url_for('static', filename='./Images/image2.jpg') }}" alt="">
+        </div>
+        <div class="items">
+            <img src="{{ url_for('static', filename='./Images/image1.jpg') }}" alt="">
+        </div>
+        <div class="items">
+            <img src="{{ url_for('static', filename='./Images/image3.jpg') }}" alt="">
+        </div>
+        <div class="items">
+            <img src="{{ url_for('static', filename='./Images/image2.jpg') }}" alt="">
+        </div>
+        <div class="items">
+            <img src="{{ url_for('static', filename='./Images/image4.jpg') }}" alt="">
+        </div>
+        <div class="items">
+            <img src="{{ url_for('static', filename='./Images/image1.jpg') }}" alt="">
+        </div>
+        <div class="items">
+            <img src="{{ url_for('static', filename='./Images/image2.jpg') }}" alt="">
+        </div>
+        <div class="items">
+            <img src="{{ url_for('static', filename='./Images/image3.jpg') }}" alt="">
+        </div>
+        <div class="items">
+            <img src="{{ url_for('static', filename='./Images/image5.jpg') }}" alt="">
+        </div>
+        <div class="items">
+            <img src="{{ url_for('static', filename='./Images/image1.jpg') }}" alt="">
+        </div>
+        
+        
+        
+    </div>
+{% endblock %}

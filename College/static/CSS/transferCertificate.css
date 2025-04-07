@@ -1,0 +1,96 @@
+/* .TC-form {
+    width: 50%;
+    height: auto;
+    margin: 50px auto;
+}
+
+form {
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.addmission_no-input {
+    height: 40px;
+    width: 300px;
+    margin-left: 15px;
+    font-size: large;
+    padding: 10px;
+}
+
+.submit-button {
+    width: 100px;
+    height: 40px;
+    font-size: larger;
+    cursor: pointer;
+    background-color: rgb(43, 168, 226);
+    border: none;
+}
+
+.submit-button:hover {
+    background-color: rgba(43, 168, 226, 0.767);
+}
+
+.head-TC {
+    margin: 30px 0;
+    background-color: rgb(43, 168, 226);
+    color: white;
+    padding: 50px;
+    font-size: 40pt;
+    text-align: center;
+
+} */
+
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button,
+.btn {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+}
+
+button:hover {
+    background-color: #0077A7;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #45A049;
+}

@@ -1,0 +1,214 @@
+.container {
+    max-width: 95vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px auto;
+    padding: 10px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.container .first {
+    width: 200px;
+    height: fit-content;
+    box-shadow: 0 0 5px rgb(25, 25, 25);
+    margin: 0 30px;
+    padding: 30px;
+    border-radius: 5px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+.container .first .first-head img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    min-width: 100px;
+}
+
+.container .first .first-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .first .second-head {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.container .first .second-head a {
+    margin-top: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.484);
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 10pt;
+    padding: 2px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.container .first .second-head a:hover{
+    background-color: aqua;
+}
+
+.container .first .second-head a span i{
+    border-radius: 50%;
+    font-size: 18pt;
+    background-color: rgb(73, 87, 195);
+    color: white;
+    padding: 5px;
+    /* margin-left: 20px; */
+}
+
+.container .first .second-head a span{
+    padding: 5px;
+    margin-right: 5px;
+}
+
+
+
+
+.container .second {
+    width: 80%;
+    height: fit-content;
+    box-shadow: 0 0 10px rgb(25, 25, 25);
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.second .top-box {
+    height: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+}
+
+.second .top-box .account {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(25, 25, 25);
+    width: 400px;
+    height: 150px;
+    margin: 10px;
+}
+
+/* .second .top-box .account span {
+    margin: 10px;
+
+} */
+
+.second .top-box .account span .user-image {
+    font-size: 50pt;
+    color: rgb(4, 0, 255);
+    margin: 5px;
+}
+
+.second .top-box .account span h3 {
+    margin-top: 10px;
+}
+
+.second .top-box .account span p {
+    margin: 0;
+}
+
+.second .top-box .account span i {
+    font-size: 26pt;
+    color: rgb(251, 0, 255);
+    margin-left: 10px;
+    margin-top: 200%;
+
+}
+
+
+.second .top-box .address {
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(25, 25, 25);
+    width: 400px;
+    height: 150px;
+    margin: 10px;
+}
+
+/* .second .top-box .address span {
+    margin: 10px;
+
+} */
+
+.second .top-box .address span .user-image{
+    font-size: 50pt;
+    color: rgb(4, 0, 255);
+    margin: 5px;
+}
+
+.second .top-box .address span h3 {
+    margin-top: 10px;
+}
+
+.second .top-box .address span p {
+    margin: 0;
+}
+
+.second .top-box .address span i {
+    font-size: 26pt;
+    color: rgb(251, 0, 255);
+    margin-left: 25px;
+    margin-top: 150%;
+}
+
+
+
+
+
+
+
+
+
+.second .bottom-box {
+    height: 55%;
+    /* box-shadow: 0 0 10px rgb(25, 25, 25); */
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.second .bottom-box h2{
+    margin: 10px;
+}
+
+.second .bottom-box .courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.second .bottom-box .courses .course{
+    border: 2px solid black;
+    height: 70px;
+    width: 150px;
+    margin: 15px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
